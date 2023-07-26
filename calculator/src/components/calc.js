@@ -6,14 +6,15 @@ const Calc=()=>{
     
    const[arr,setarr]=useState([]);
    //  const[arr1,setarr1]=useState([])
-   const[num,usenum]=useState('');
+     const[num,usenum]=useState('');
     const eva=(num)=>{
        try{
         let a=Function("return " +num)();
-        let s=a.toString();
+        
+        let s=a.toString();  //converting to string 
 
-        usenum(s);
-        setarr([...arr,num,s])
+         usenum(s);
+         
 
         }
        
