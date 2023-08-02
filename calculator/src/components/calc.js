@@ -4,10 +4,11 @@ import { useState } from "react";
 
 const Calc=()=>{
     
-   const[arr,setarr]=useState([]);
+   const[arr,setarr]=useState([]);  //storing the values
    //  const[arr1,setarr1]=useState([])
      const[num,usenum]=useState('');
     const eva=(num)=>{
+      
        try{
         let a=Function("return " +num)();
         
